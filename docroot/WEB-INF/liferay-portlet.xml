@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.0.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_0_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>gLibraryRepositoryBrowser</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>true</instanceable>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+                <header-portal-javascript>/html/js/ext-js/adapter/ext/ext-base.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ext-all-debug.js</header-portal-javascript>
+                <!--header-portal-javascript>/html/js/ext-js/ux/GEarthPanel-1.1.js</header-portal-javascript>-->
+                <header-portal-javascript>/html/js/ext-js/ux/GMapPanel3.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/menu/RangeMenu.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/menu/ListMenu.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/menu/EditableItem.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/menu/TreeMenu.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/GridFilters.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/filter/Filter.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/filter/StringFilter.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/filter/DateFilter.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/filter/ListFilter.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/filter/NumericFilter.js</header-portal-javascript>
+                <header-portal-javascript>/html/js/ext-js/ux/gridfilters/filter/BooleanFilter.js</header-portal-javascript>
+                <header-portlet-javascript>https://maps.google.com/maps/api/js?sensor=false</header-portlet-javascript>
+		<header-portlet-javascript>/js/main.js</footer-portlet-javascript>
+                <footer-portal-css>/html/js/ext-js/resources/css/ext-green.css</footer-portal-css>
+                <footer-portal-css>/html/js/ext-js/ux/gridfilters/resources/style.css</footer-portal-css>
+		<css-class-wrapper>gLibraryRepositoryBrowser-portlet</css-class-wrapper>
+	</portlet>
+	<role-mapper>
+		<role-name>administrator</role-name>
+		<role-link>Administrator</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>guest</role-name>
+		<role-link>Guest</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>power-user</role-name>
+		<role-link>Power User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>user</role-name>
+		<role-link>User</role-link>
+	</role-mapper>
+</liferay-portlet-app>
