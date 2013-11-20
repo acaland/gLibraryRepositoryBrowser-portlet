@@ -10,3 +10,12 @@ An instance of this portlet is deployed on the agInfra Science Gateway, demonstr
 
 This portlet requires the ExtJS 3.x libraries to be installed on the application server.
 
+Configure a repository
+=====================
+
+Edit docroot/js/main.js
+
+and modify the variables:
+
+var repo = 'repository_name';
+var rootCollectionName = 'root_collection_name';

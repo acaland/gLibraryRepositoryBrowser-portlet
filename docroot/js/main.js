@@ -1,8 +1,10 @@
 
 function example (){
   var myDiv = Ext.get('gLibtestDiv');
-  var urlServer='/glibrary/'
-  var repo='ICCU'
+  var urlServer='/glibrary/';
+  // Change the repository to point to
+  var repo='agInfra';
+  var rootCollectionName = "agInfra Collections";
   
   var proxy = new Ext.data.ScriptTagProxy( { url: urlServer+'glib/miguel/' } );
   var reader= new Ext.data.JsonReader({
@@ -72,7 +74,7 @@ function example (){
 	  preloadChildren: true
 	}),
 	root : new Ext.tree.AsyncTreeNode({ // 2
-	  text : 'ICCU Collections',
+	  text : rootCollectionName,
 	  id : '0', // deroberto/Entries
 	  expanded : true
 	}),
